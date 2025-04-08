@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-+r7o2hs)ox=4oqfszfkl(h--l^ft_ko-vq%1%uj9rc0t!-4d53
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "djongo",
     "octofit_tracker",
+    "rest_framework",
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [

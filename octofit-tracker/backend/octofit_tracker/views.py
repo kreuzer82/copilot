@@ -7,11 +7,11 @@ from .models import User, Team, Activity, Leaderboard, Workout
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': 'api/users/',
-        'teams': 'api/teams/',
-        'activities': 'api/activities/',
-        'leaderboard': 'api/leaderboard/',
-        'workouts': 'api/workouts/'
+        'users': 'https://orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev/api/users/',
+        'teams': 'https://orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev/api/teams/',
+        'activities': 'https://orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev/api/activities/',
+        'leaderboard': 'https://orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev/api/leaderboard/',
+        'workouts': 'https://orange-space-waffle-jjx9q4r97q7hq9p9-8000.app.github.dev/api/workouts/'
     })
 
 class UserViewSet(viewsets.ModelViewSet):
